@@ -1,0 +1,42 @@
+// Cap.odl : type library source for Cap.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Cap.tlb).
+
+[ uuid(C8039706-581C-4CA9-936F-8094F25E67FB), version(1.0) ]
+library Cap
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CCapDoc
+	
+	[ uuid(98868B10-D612-494F-94FB-5DBD63ADD5A3) ]
+	dispinterface ICap
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CCapDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CCapDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CCapDoc
+	
+	[ uuid(02FF0E88-56D4-4DE1-B7CC-C97CA8AD5AC7) ]
+	coclass Cap
+	{
+		[default] dispinterface ICap;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

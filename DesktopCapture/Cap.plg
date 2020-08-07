@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cap - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\leizi\AppData\Local\Temp\RSP3A00.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Cap.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\share\Work\Project\Demo\Cap.cpp"
+"D:\share\Work\Project\Demo\DlgCap.cpp"
+"D:\share\Work\Project\Demo\DlgProxy.cpp"
+"D:\share\Work\Project\Demo\OutputBar.cpp"
+"D:\share\Work\Project\Demo\QueueBuf.cpp"
+"D:\share\Work\Project\Demo\QuickSocket.cpp"
+"D:\share\Work\Project\Demo\SimpProtocol.cpp"
+"D:\share\Work\Project\Demo\WorkspaceBar.cpp"
+"D:\share\Work\Project\Demo\WorkspaceBar2.cpp"
+]
+Creating command line "cl.exe @C:\Users\leizi\AppData\Local\Temp\RSP3A00.tmp" 
+Creating temporary file "C:\Users\leizi\AppData\Local\Temp\RSP3A01.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Cap.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\share\Work\Project\Demo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\leizi\AppData\Local\Temp\RSP3A01.tmp" 
+Creating temporary file "C:\Users\leizi\AppData\Local\Temp\RSP3A02.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Cap.pdb" /debug /machine:I386 /out:"Debug/Cap.exe" /pdbtype:sept 
+.\Debug\Cap.obj
+.\Debug\DlgCap.obj
+.\Debug\DlgProxy.obj
+.\Debug\OutputBar.obj
+.\Debug\QueueBuf.obj
+.\Debug\QuickSocket.obj
+.\Debug\SimpProtocol.obj
+.\Debug\StdAfx.obj
+.\Debug\WorkspaceBar.obj
+.\Debug\WorkspaceBar2.obj
+.\Debug\Cap.res
+]
+Creating command line "link.exe @C:\Users\leizi\AppData\Local\Temp\RSP3A02.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Automatically linking with BCGCBPRO100D.lib
+d:\share\work\project\demo\ffmpeg\include\rational.h(50) : warning C4244: 'return' : conversion from '__int64' to 'int', possible loss of data
+Compiling...
+Cap.cpp
+DlgCap.cpp
+DlgProxy.cpp
+OutputBar.cpp
+QueueBuf.cpp
+D:\share\Work\Project\Demo\QueueBuf.cpp(61) : warning C4018: '<' : signed/unsigned mismatch
+D:\share\Work\Project\Demo\QueueBuf.cpp(74) : warning C4018: '<' : signed/unsigned mismatch
+D:\share\Work\Project\Demo\QueueBuf.cpp(74) : warning C4018: '>' : signed/unsigned mismatch
+QuickSocket.cpp
+SimpProtocol.cpp
+WorkspaceBar.cpp
+WorkspaceBar2.cpp
+Generating Code...
+D:\share\Work\Project\Demo\DlgCap.cpp(798) : warning C4700: local variable 'dwSendLen' used without having been initialized
+Linking...
+msvcrtd.lib(cinitexe.obj) : warning LNK4098: defaultlib "libc.lib" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\Users\leizi\AppData\Local\Temp\RSP49FA.tmp" with contents
+[
+/nologo /o"Debug/Cap.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\Cap.sbr
+.\Debug\DlgCap.sbr
+.\Debug\DlgProxy.sbr
+.\Debug\OutputBar.sbr
+.\Debug\QueueBuf.sbr
+.\Debug\QuickSocket.sbr
+.\Debug\SimpProtocol.sbr
+.\Debug\WorkspaceBar.sbr
+.\Debug\WorkspaceBar2.sbr]
+Creating command line "bscmake.exe @C:\Users\leizi\AppData\Local\Temp\RSP49FA.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Cap.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>
