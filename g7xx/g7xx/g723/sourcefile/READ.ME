@@ -1,0 +1,38 @@
+The following test sequences are specific to the G723.1 v5.1
+VAD/DTX/CNG mode of operation :
+
+Encoder sequences :
+-------------------
+lbccodec -c -r63 -v dtx63.tin dtx63.xco
+lbccodec -c -r53 -v dtx53mix.tin dtx53.xco
+lbccodec -c -rdtxmix.rat -v dtx53mix.tin dtxmix.xco
+The files *.xco are to be compared with the reference
+bitstream files *.rco
+
+Decoder sequences :
+-------------------
+lbccodec -d dtx63.rco dtx63.xou
+lbccodec -d dtx53.rco dtx53.xou
+lbccodec -d dtxmix.rco dtxmix.xou
+lbccodec -d -fdtx63e.crc dtx63e.tco dtx63e.xou
+lbccodec -d dtx63b.tco dtx63b.xou
+The files *.xou are to be compared with the reference
+output files *.rou
+
+Sequence name  |    Size     |               Type
+------------------------------------------------------------------------
+dtx63.tin      |   414 720   |  Encoder input / 6.3
+dtx53mix.tin   |    57 600   |  Encoder input / 5.3 and mixed rate
+dtx63.rco      |    16 989   |  Encoder output / Decoder input / rate 6.3
+dtx53.rco      |     1 556   |  Encoder output / Decoder input / rate 5.3
+dtxmix.rco     |     1 688   |  Encoder output / Decoder input / mixed rate
+dtx63e.tco     |     1 794   |  Decoder input / rate 6.3
+dtx63b.tco     |       244   |  Decoder input / rate 6.3
+dtx63.rou      |   414 720   |  Decoder output / rate 6.3
+dtx63e.rou     |    57 600   |  Decoder output / rate 6.3
+dtx63b.rou     |     5 280   |  Decoder output / rate 6.3
+dtx53.rou      |    57 600   |  Decoder output / rate 5.3
+dtxmix.rou     |    57 600   |  Decoder output / mixed rate
+dtxmix.rat     |       120   |  Encoder rate input
+dtx63e.crc     |       240   |  Decoder CRC input
+
